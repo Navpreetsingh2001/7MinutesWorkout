@@ -4,17 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/main_screen_padding"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="376dp"
+        android:layout_height="149dp"
+        android:background="@drawable/img_main_page"
+        android:contentDescription="@string/start_image"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_main_page" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <FrameLayout
         android:id="@+id/flStart"
@@ -24,18 +28,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/item_color_accent_border_ripple"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.204">
-        
+        app:layout_constraintVertical_bias="0.154">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start"
-            android:textStyle="bold"
-            android:textSize="22sp"
-            android:textColor="@color/lightblack"
             android:layout_gravity="center"
-            
+            android:text="START"
+            android:textColor="@color/lightblack"
+            android:textSize="@dimen/default_button_textsize"
+            android:textStyle="bold"
+
             />
 
     </FrameLayout>
